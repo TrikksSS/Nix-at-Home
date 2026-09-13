@@ -132,11 +132,11 @@
     btop
     alacritty 
     fuzzel
-     swaylock
-     mako
-     swayidle
+    swaylock
+    mako
+    swayidle
     keepassxc
-       pkgs.xwayland-satellite
+    pkgs.xwayland-satellite
   ];
 
   # 3. Optimization: Prevent systemd from waiting for network online
