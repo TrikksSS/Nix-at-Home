@@ -9,8 +9,10 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./1password.nix
-      ./niri.nix
+      #./niri.nix
       ./steam.nix
+      #./cosmic.nix
+      ./gnome.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -50,9 +52,7 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable the GNOME Desktop Environment.
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+
   
  # Configure keymap in X11
   services.xserver.xkb = {
