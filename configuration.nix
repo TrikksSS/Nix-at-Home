@@ -8,6 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./1password.nix
+      ./niri.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -51,16 +53,6 @@
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
   
-  #Enable the Niri Window Manager
-  programs.niri.enable = true;
-  systemd.user.services.niri.enableDefaultPath = false;
-  security.polkit.enable = true; # polkit
-services.gnome.gnome-keyring.enable = true; # secret service
-security.pam.services.swaylock = {};
-
-programs.waybar.enable = true; # top bar
-
-
  # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
