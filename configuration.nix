@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./1password.nix
       ./niri.nix
+      ./steam.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
