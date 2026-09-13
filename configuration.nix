@@ -157,14 +157,6 @@ virtualisation.podman = {
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
 
-  #This is for 1Password since its a special little princess
-  programs._1password.enable = true;
-  programs._1password-gui = {
-    enable = true;
-    # Certain features, including CLI integration and system authentication support,
-    # require enabling PolKit integration on some desktop environments (e.g. Plasma).
-    polkitPolicyOwners = [ "parker" ];
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
