@@ -12,7 +12,8 @@
       #./niri.nix
       ./steam.nix
       #./cosmic.nix
-      ./gnome.nix
+      #./gnome.nix
+	./kde.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
