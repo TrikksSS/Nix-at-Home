@@ -112,8 +112,21 @@
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
+  # Hardened Firefox config
+  programs.firefox = {
+  enable = true;
+
+  languagePacks = [ "en-US" "de" "fr" ];
+
+  preferences = {
+    "browser.startup.homepage"      = "https://google.com";
+    "privacy.resistFingerprinting"  = true;
+  };
+
+  policies = {
+    DisableTelemetry = true;
+  };
+};
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -178,10 +191,6 @@ virtualisation.podman = {
   # Or disable the firewall altogether.
    networking.firewall.enable = false;
 
-  # Copy the NixOS configuration file and link it from the resulting system
-  # (/run/current-system/configuration.nix). This is useful in case you
-  # accidentally delete configuration.nix.
-   system.copySystemConfiguration = true;
 
   system.stateVersion = "26.05"; # Did you read the comment?
 
