@@ -6,7 +6,6 @@
       ./hardware-configuration.nix
       ./1password.nix
       #./niri.nix
-      ./steam.nix
       ./cosmic.nix
       #./gnome.nix
       #./kde.nix
