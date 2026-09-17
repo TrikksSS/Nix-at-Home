@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system. Help is available in the configuration.nix(5) man page, on
-# https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
-
 { config, pkgs, ... }:
 
 {
@@ -11,9 +7,9 @@
       ./1password.nix
       #./niri.nix
       ./steam.nix
-      #./cosmic.nix
+      ./cosmic.nix
       #./gnome.nix
-	./kde.nix
+      #./kde.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
