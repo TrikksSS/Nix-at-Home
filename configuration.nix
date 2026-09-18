@@ -96,7 +96,6 @@
 	yt-dlp
 	proton-vpn
 	qbittorrent
-	librewolf
 	pkgs.ktailctl
 	tealdeer	
 	ncdu
