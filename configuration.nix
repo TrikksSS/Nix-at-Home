@@ -106,6 +106,7 @@
     ];
   };
 
+  hardware.steam-hardware.enable = true;
   # Hardened Firefox config
   programs.firefox = {
   enable = true;
