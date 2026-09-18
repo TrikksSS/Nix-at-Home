@@ -6,9 +6,9 @@
       ./hardware-configuration.nix
       ./1password.nix
       #./niri.nix
-      ./cosmic.nix
+     # ./cosmic.nix
       #./gnome.nix
-      #./kde.nix
+      ./kde.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
